@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Description>Library to download football data from clubelo.com site</Description>
+    <Description>Library to interact with clubelo.com API</Description>
     <PackageTags>clubelo;elo</PackageTags>
     <Title>ClubElo.API</Title>
     <PackageReadmeFile>README.md</PackageReadmeFile>
