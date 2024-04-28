@@ -24,9 +24,9 @@ var result = await client.GetClubEloRanksByDateAsync("2024-01-01");
 
 Notice tha the date must be in the format yyyy-MM-dd (2024-01-01).
 
-## How to get the Elo features?
+## How to get the Elo fixtures?
 
-You can get the Elo features by creating an instance of the `ClubEloHttpClient` class and calling the `GetClubEloFixturesAsync` method.
+You can get the Elo fixtures by creating an instance of the `ClubEloHttpClient` class and calling the `GetClubEloFixturesAsync` method.
 
 ```cs
 var client = new ClubEloHttpClient();  	
