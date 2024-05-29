@@ -9,7 +9,7 @@ namespace ClubElo.API.Models
         [ColumnName("Date")]
         private string? DateRaw { get; set; }
 
-        public DateTime? Date => DateTime.TryParse(DateRaw?.Trim(), out var value) ? (DateTime?) value : null;
+        public DateTime? Date => DateTime.TryParse(DateRaw?.Trim(), out var value) ? (DateTime?) new DateTime(value.Ticks, DateTimeKind.Utc) : null;
 
 
         [ColumnName("Country")]

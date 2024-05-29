@@ -40,12 +40,12 @@ namespace ClubElo.API.Models
         [ColumnName("From")]
         private string? FromRaw { get; set; }
 
-        public DateTime? From => DateTime.TryParse(FromRaw?.Trim(), out var value) ? (DateTime?)value : null;
+        public DateTime? From => DateTime.TryParse(FromRaw?.Trim(), out var value) ? (DateTime?) new DateTime(value.Ticks, DateTimeKind.Utc) : null;
 
 
         [ColumnName("To")]
         private string? ToRaw { get; set; }
 
-        public DateTime? To => DateTime.TryParse(ToRaw?.Trim(), out var value) ? (DateTime?)value : null;
+        public DateTime? To => DateTime.TryParse(ToRaw?.Trim(), out var value) ? (DateTime?) new DateTime(value.Ticks, DateTimeKind.Utc) : null;
     }
 }

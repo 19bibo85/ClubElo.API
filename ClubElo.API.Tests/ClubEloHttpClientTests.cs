@@ -73,8 +73,8 @@ namespace ClubElo.API.Tests
             Assert.Equal("ENG", rank.Country);
             Assert.Equal(2, rank.Level);
             Assert.Equal(1365.06604004m, rank.Elo);
-            Assert.Equal(new DateTime(1946, 7, 7), rank.From);
-            Assert.Equal(new DateTime(1946, 9, 4), rank.To);
+            Assert.Equal(new DateTime(1946, 7, 7, 0, 0, 0, DateTimeKind.Utc), rank.From);
+            Assert.Equal(new DateTime(1946, 9, 4, 0, 0, 0, DateTimeKind.Utc), rank.To);
         }
 
 
@@ -105,8 +105,8 @@ namespace ClubElo.API.Tests
             Assert.Equal("ENG", rank.Country);
             Assert.Equal(1, rank.Level);
             Assert.Equal(2042.03088379m, rank.Elo);
-            Assert.Equal(new DateTime(2024, 1, 1), rank.From);
-            Assert.Equal(new DateTime(2024, 1, 13), rank.To);
+            Assert.Equal(new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc), rank.From);
+            Assert.Equal(new DateTime(2024, 1, 13, 0, 0, 0, DateTimeKind.Utc), rank.To);
         }
 
 
