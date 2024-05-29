@@ -11,6 +11,7 @@
     <PackageProjectUrl>https://github.com/19bibo85/ClubElo.API</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/19bibo85/ClubElo.API</RepositoryUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
